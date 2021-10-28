@@ -28,7 +28,7 @@ desired_avg_price = str2double(info(5)); % desired final avg'd price ($)
 shares_to_buy = (total_cost - (total_units  * desired_avg_price)) / (desired_avg_price - price_current);
 amount_to_spend = shares_to_buy * price_current;
 
-fprintf('You need to buy %4.2f amount of %s. Totaling $%4.2f \n to bring down the average price from %4.2f to %4.2f \n ', shares_to_buy, name_share ,  amount_to_spend, price_purchased, desired_avg_price);
+fprintf('You need to buy %4.2f shares of %s. Totaling $%4.2f \n to bring down the average price from $%4.2f/share to $%4.2f/share \n ', shares_to_buy, name_share ,  amount_to_spend, price_purchased, desired_avg_price);
  
 
 
